@@ -83,6 +83,17 @@
     padding:17px 24px;border-radius:10px;text-decoration:none;
     box-shadow:0 12px 30px rgba(37,99,235,0.35);
     margin-bottom:24px;
+    animation:pulse-btn 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse-btn{
+    0%,100%{
+      box-shadow:0 12px 30px rgba(37,99,235,0.35), 0 0 0 0 rgba(59,130,246,0.5);
+      transform:scale(1);
+    }
+    50%{
+      box-shadow:0 12px 34px rgba(37,99,235,0.45), 0 0 0 10px rgba(59,130,246,0);
+      transform:scale(1.015);
+    }
   }
 
   .alert-box{
